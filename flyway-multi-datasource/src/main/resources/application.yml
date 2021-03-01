@@ -1,0 +1,25 @@
+## Spring DATASOURCE (DataSourceAutoConfiguration & DataSourceProperties)
+dev:
+    datasource:
+        password: root
+        url: jdbc:mysql://localhost:3306/dev?useSSL=false&createDatabaseIfNotExist=true
+        username: root
+    jpa:
+        hibernate:
+            ddl-auto: none
+        properties:
+            hibernate:
+                dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+
+dev_central:
+    datasource:
+        password: root
+        url: jdbc:mysql://localhost:3306/dev_central?useSSL=false&createDatabaseIfNotExist=true
+        username: root
+    jpa:
+        hibernate:
+            ddl-auto: none
+        properties:
+            hibernate:
+                dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+
